@@ -14,6 +14,14 @@ if __name__ == '__main__':
 
     for counter in range(20):
         dimension = random.randint(2, 3)
+        """"
+        Når man opretter et objekt som man gør i linjerne herunder. Linje 26 (et objekt af klassen: 
+        Point_Class_2Dimension) og linje 28 (et objekt af klassen: Point_Class_3Dimension). Så vil man
+        få kaldt kontruktoren for det pågældende objekt. Denne kode er skrevet under de 2 klasser, vi har i spil
+        her. Klassen Point_Class_2Dimension for et 2 dimensionelt punkt og klassen 
+        Point_Class_3Dimension for et 3 dimensionelt punkt. Den kode i de 2 klasser, man får kaldt er koden 
+        i metoderne der har formen : def __init__(self, og så videre.
+        """
         if 2 == dimension:
             pointList.append(Point_Class_2Dimension(random.randint(0, 20), random.randint(0, 20)))
         else:
@@ -25,7 +33,7 @@ if __name__ == '__main__':
 
     numberOf2DimensionalPoints = [0]
     numberOf3DimensionalPoints = [0]
-    # I Python kan vi ikke som i f.eks C# få ændret værdien af en integrr i en funktion.
+    # I Python kan vi ikke som i f.eks C# få ændret værdien af en integer i en funktion.
     # Så vi er nødt til, at bruge en "kunstig" liste med et element i for at opnå
     # denne effekt !!!
     Point_Class.calculate_Number_Of_Poins(pointList, numberOf2DimensionalPoints, numberOf3DimensionalPoints)

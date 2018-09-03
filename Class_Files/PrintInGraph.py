@@ -1,10 +1,11 @@
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 
+"""
+Her er der vist et eksemepel på, at man i Python (modsat f.eks C#) godt kan have metoder (metoden plotPoints),
+der ikke tilhører nogen klasse. 
+"""
 def plotPoints(plotList):
-    PointsXCoordinates =[1, 2, 3, 4, 5]
-    PointsYCoordinates = [1, 2, 3, 4, 5]
-
     Point2DimensionalXCoordinates = []
     Point2DimensionalYCoordinates = []
 
